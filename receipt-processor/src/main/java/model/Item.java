@@ -1,13 +1,15 @@
 package model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import jakarta.validation.constraints.NotNull;
 
 
 public  class Item {
-
+    @NotNull
     @JsonProperty
     private String shortDescription;
 
+    @NotNull
     @JsonProperty
     private Double price;
 
