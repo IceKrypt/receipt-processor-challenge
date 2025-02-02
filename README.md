@@ -1,3 +1,21 @@
+# Run Instructions
+
+Navigate to source root
+```
+cd receipt-processor-challenge/receipt-processor
+```
+
+Build the docker image
+```
+docker build -t receipt-processor .
+```
+
+Run the container on port 8080
+```
+docker run -p 8080:8080 receipt-processor
+```
+
+
 # Receipt Processor
 
 Build a webservice that fulfils the documented API. The API is described below. A formal definition is provided 
