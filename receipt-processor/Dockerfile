@@ -15,6 +15,9 @@ WORKDIR /build
 
 # Copy the mvnw wrapper with executable permissions.
 COPY --chmod=0755 mvnw mvnw
+# Convert Windows CRLF line endings to Unix LF in the mvnw script.
+RUN sed -i 's/\r$//' mvnw
+
 COPY .mvn/ .mvn/
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
