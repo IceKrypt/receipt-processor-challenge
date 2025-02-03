@@ -15,6 +15,13 @@ Run the container on port 8080
 docker run -p 8080:8080 receipt-processor
 ```
 
+Endpoints will be available at:
+```
+http://localhost:8080/receipts/process
+```
+```
+http://localhost:8080/receipts/{id}/points
+```
 
 # Receipt Processor
 
